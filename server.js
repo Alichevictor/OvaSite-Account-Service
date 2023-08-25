@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
-import csurf from "csurf";
+// import csurf from "csurf";
 import cors from "cors"; 
 import helmet from "helmet";
 import {
@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors());
-app.use(csurf({ cookie: true }));
+// app.use(csurf({ cookie: true }));
 app.use(helmet());
 
 //Routes go here
