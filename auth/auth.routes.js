@@ -9,12 +9,12 @@ import {
   authRouter.post("/register", registerUser);
   authRouter.post("/login", loginUser);
   authRouter.post("/logout", logoutUser);
-  authRouter.post("/forgotPassword", forgotPassword);
-  authRouter.patch("/resetPassword/:token", resetPassword);
+  authRouter.post("/forgotPassword", forgot-password);
+  authRouter.patch("/resetPassword/:token", reset-password);
   
   
   authRouter.use(protect);
-  authRouter.patch("/updatePassword", updatePassword);
+  authRouter.patch("/update-password", update-password);
   
   
   export default authRouter;

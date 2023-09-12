@@ -229,4 +229,4 @@ const resetPassword = asyncHandler(async (req, res, next) => {
   createSendToken(user, 200, req, res);
 });
 
-export { registerUser, loginUser, logoutUser, protect, updatePassword, forgotPassword, resetPassword };
+export { registerUser, loginUser, logoutUser, protect, update-password, forgot-password, reset-password };
